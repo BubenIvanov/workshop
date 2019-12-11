@@ -19,7 +19,7 @@ post_build:
     - aws events put-events --entries file://ami_builder_event.json
     - echo "build completed on `date`"
 artifacts:
-files:
+  files:
     - ami_builder_event.json
     - build.log
-discard-paths: yes
+  discard-paths: yes

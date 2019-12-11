@@ -30,7 +30,7 @@ Resources:
   BuildArtifactsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: ${AWS::StackName}-build-artifacts
+      BucketName: !Sub ${AWS::StackName}-build-artifacts
 
   BuildArtifactsBucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
